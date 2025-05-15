@@ -1,0 +1,13 @@
+@import "./../styles/variables";
+
+.layout {
+  &__side-bar {
+    flex: 0 0 20%;
+    background-color: $side-bar-bg-color;
+  }
+
+  // Content
+  &__content {
+    background-color: $main-content-bg-color;
+  }
+}

@@ -1,1 +1,89 @@
-/* You can add global styles to this file, and also import other style files */
+// Bootstrap Colors Overrides
+$primary: #2c98f0;
+
+// Imports
+@import "./node_modules/bootstrap/scss/bootstrap";
+@import "styles/variables";
+@import "styles/bootstrap-overrides";
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Quicksand:wght@300..700&display=swap");
+
+// Reset
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-family: $text-font-family;
+  font-size: 16px;
+  line-height: 1.5;
+}
+
+// Typgoraphy
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: $heading-font-family;
+  font-weight: 400;
+  color: $black;
+}
+
+h1,
+.h1 {
+  font-size: 60px;
+}
+
+h2,
+.h2 {
+  font-size: 22px;
+}
+
+p {
+  font-size: 15px;
+  color: $text-secondary-color;
+}
+
+// Utility Classes
+.text-red {
+  color: $red;
+}
+
+.fs-xxl {
+  font-size: $font-size-xxl;
+}
+
+.fs-xl {
+  font-size: $font-size-xl;
+}
+
+.fs-lg {
+  font-size: $font-size-lg;
+}
+
+.fs-md {
+  font-size: $font-size-md;
+}
+
+.fs-base {
+  font-size: $font-size-base;
+}
+
+.fs-sm {
+  font-size: $font-size-sm;
+}
+
+.fs-xs {
+  font-size: $font-size-xs;
+}
+
+// Default Page
+.default-page-padding {
+  padding: 0 15%;
+}
+
