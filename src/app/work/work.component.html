@@ -1,1 +1,50 @@
-<p>work works!</p>
+<div class="default-page-padding d-flex flex-column justify-content-center">
+  <!-- Title -->
+  <div class="section-title">
+    <span class="section-title__overline d-inline-block mb-3 text-uppercase">
+      Experience
+    </span>
+    <h2 class="section-title__text text-uppercase fw-bold">Work Experience</h2>
+  </div>
+  <!-- END || Title -->
+
+  <!-- Works -->
+  <div class="works">
+    <!-- Filters -->
+    <ul class="list-inline works__filters d-flex gap-3 mb-3">
+      <li class="list-inline-item">
+        <a
+          class="link fs-base fw-medium link--active"
+          routerLink="graphic-design"
+          routerLinkActive="link--active"
+        >
+          Graphic Design
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="link fs-base fw-medium"
+          routerLink="apps"
+          routerLinkActive="link--active"
+        >
+          Apps
+        </a>
+      </li>
+      <li class="list-inline-item">
+        <a
+          class="link fs-base fw-medium"
+          routerLink="software"
+          routerLinkActive="link--active"
+        >
+          Software
+        </a>
+      </li>
+    </ul>
+    <!-- END || Filters -->
+  </div>
+
+  <!-- Works Lists -->
+  <router-outlet></router-outlet>
+  <!-- END || Works Lists -->
+  <!-- END || Works -->
+</div>

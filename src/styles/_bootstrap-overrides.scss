@@ -10,10 +10,24 @@
   &-primary {
     background-color: transparent;
     border: 1px solid $black;
-    &:hover {
+    &:hover,
+    &:focus,
+    &:active,
+    &:active:focus,
+    &:active:hover {
       background-color: $black;
       color: $white;
       border-color: $black;
+    }
+    &-blue {
+      height: 38px;
+      padding: 0 12px;
+      background-color: #0d6efd;
+      border-radius: 4px;
+      color: $white;
+      text-transform: capitalize;
+      font-size: $font-size-base;
+      letter-spacing: 0;
     }
   }
 }

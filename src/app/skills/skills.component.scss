@@ -1,0 +1,65 @@
+@import "../../styles/variables";
+
+:host {
+  width: 100%;
+}
+
+.skill {
+  &__progress,
+  &__bar {
+    height: 6px;
+    border-radius: 8px;
+    overflow: visible;
+  }
+
+  &__bar {
+    &::before {
+      content: "";
+      position: absolute;
+      right: 0;
+      width: 10px;
+      height: 10px;
+      border-radius: 100%;
+      background-color: inherit;
+    }
+    &::after {
+      content: attr(data-percent);
+      position: absolute;
+      top: -24px;
+      right: 0;
+      font-size: $font-size-sm;
+      font-weight: 700;
+      color: inherit;
+    }
+  }
+
+  &--blue .skill__bar {
+    background-color: $blue;
+    color: $blue;
+  }
+
+  &--red .skill__bar {
+    background-color: $red;
+    color: $red;
+  }
+
+  &--yellow .skill__bar {
+    background-color: $yellow;
+    color: $yellow;
+  }
+
+  &--magenta .skill__bar {
+    background-color: $magenta;
+    color: $magenta;
+  }
+
+  &--green .skill__bar {
+    background-color: $green;
+    color: $green;
+  }
+
+  &--navy .skill__bar {
+    background-color: $navy;
+    color: $navy;
+  }
+}

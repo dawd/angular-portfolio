@@ -1,0 +1,36 @@
+@import "../../styles/variables";
+
+:host {
+  width: 100%;
+}
+
+.service-card {
+  box-shadow: 0 0 56px -8px #0000002b;
+  border-bottom: 2px solid;
+  padding: 24px;
+  min-height: 190px;
+
+  &--blue {
+    border-color: $blue;
+    color: $blue;
+  }
+
+  &--red {
+    border-color: $red;
+    color: $red;
+  }
+
+  &--yellow {
+    border-color: $yellow;
+    color: $yellow;
+  }
+
+  &--magenta {
+    border-color: $magenta;
+    color: $magenta;
+  }
+
+  &__icon {
+    font-size: 30px;
+  }
+}

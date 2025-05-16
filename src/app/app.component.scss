@@ -9,5 +9,6 @@
   // Content
   &__content {
     background-color: $main-content-bg-color;
+    overflow-y: auto;
   }
 }

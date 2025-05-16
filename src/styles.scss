@@ -22,6 +22,15 @@ body {
   line-height: 1.5;
 }
 
+a {
+  text-decoration: none;
+  color: $primary;
+  transition: all 0.3s ease-in-out;
+  &:hover {
+    color: $primary;
+  }
+}
+
 // Typgoraphy
 h1,
 h2,
@@ -46,10 +55,23 @@ h2,
 
 p {
   font-size: 15px;
+  line-height: 1.8;
   color: $text-secondary-color;
+  margin-bottom: 24px;
+  & + p {
+    margin-bottom: 32px;
+  }
 }
 
 // Utility Classes
+.ff-serif {
+  font-family: $heading-font-family;
+}
+
+.ff-sans {
+  font-family: $text-font-family;
+}
+
 .text-red {
   color: $red;
 }
@@ -82,8 +104,58 @@ p {
   font-size: $font-size-xs;
 }
 
-// Default Page
-.default-page-padding {
-  padding: 0 15%;
+.section-title {
+  font-size: $font-size-md;
+  margin-bottom: 32px;
+  letter-spacing: 5px;
+  &__overline {
+    font-size: $font-size-sm;
+    text-transform: uppercase;
+    color: $text-overline-color;
+  }
 }
 
+// Default Page
+.default-page-padding {
+  padding: 48px 15%;
+}
+
+// Work Item Card
+.work-item {
+  position: relative;
+  &:hover {
+    .work-item__content {
+      opacity: 1;
+    }
+  }
+  &__image {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+    img {
+      width: 100%;
+      height: 100%;
+      aspect-ratio: 16/9;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+  &__content {
+    transition: all 0.3s ease-in-out;
+    padding: 40px 24px;
+    position: absolute;
+    inset: 0;
+    opacity: 0;
+  }
+  &__category {
+    color: $white;
+    opacity: 0.7;
+  }
+  .btn-work {
+    padding: 5px;
+    background-color: #ffffff80;
+    border-radius: 4px;
+    height: 32px;
+    min-width: 32px;
+  }
+}

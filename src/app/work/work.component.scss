@@ -1,0 +1,14 @@
+@import "../../styles/variables";
+
+:host {
+  width: 100%;
+}
+
+.works {
+  .link {
+    color: $black;
+    &--active {
+      color: $primary;
+    }
+  }
+}

@@ -11,6 +11,9 @@ import { SkillsComponent } from './skills/skills.component';
 import { ExperienceComponent } from './experience/experience.component';
 import { WorkComponent } from './work/work.component';
 import { NotFoundComponent } from './not-found/not-found.component';
+import { GraphicDesignComponent } from './graphic-design/graphic-design.component';
+import { AppsComponent } from './apps/apps.component';
+import { SoftwareComponent } from './software/software.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +25,10 @@ import { NotFoundComponent } from './not-found/not-found.component';
     SkillsComponent,
     ExperienceComponent,
     WorkComponent,
-    NotFoundComponent
+    NotFoundComponent,
+    GraphicDesignComponent,
+    AppsComponent,
+    SoftwareComponent
   ],
   imports: [
     BrowserModule,

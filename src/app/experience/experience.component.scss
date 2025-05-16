@@ -1,0 +1,86 @@
+@import "../../styles/variables";
+
+:host {
+  width: 100%;
+  padding-bottom: 48px;
+}
+
+.timeline {
+  position: relative;
+  padding-top: 20px;
+
+  &::before,
+  &::after {
+    content: "";
+    position: absolute;
+    background-color: $light;
+    z-index: 0;
+  }
+
+  &::before {
+    top: 0;
+    left: 27.5px;
+    width: 3px;
+    height: 100%;
+  }
+
+  &::after {
+    display: block;
+    position: relative;
+    z-index: 1;
+    width: 55px;
+    height: 55px;
+    flex: 0 0 55px;
+    background-color: $white;
+    border: 5px solid $light;
+    border-radius: 100%;
+  }
+
+  &__item {
+    margin-bottom: 20px;
+
+    &--blue .timeline__icon {
+      background-color: $blue;
+    }
+    &--red .timeline__icon {
+      background-color: $red;
+    }
+    &--yellow .timeline__icon {
+      background-color: $yellow;
+    }
+  }
+
+  &__icon {
+    position: relative;
+    z-index: 1;
+    margin-top: 8px;
+    width: 55px;
+    height: 55px;
+    flex: 0 0 55px;
+    color: $white;
+    border: 5px solid $light;
+  }
+
+  &__card {
+    background-color: $light;
+    padding: 20px;
+    position: relative;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 24px;
+      left: -14px;
+      display: inline-block;
+      border-top: 14px solid transparent;
+      border-left: 0 solid $light;
+      border-right: 14px solid $light;
+      border-bottom: 14px solid transparent;
+    }
+  }
+
+  &__date {
+    color: $black;
+    font-size: $font-size-base;
+    opacity: 0.4;
+  }
+}
